@@ -4,7 +4,11 @@
   "description": "Official website for HEMA Nelson: http://www.hemanelson.com",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parallelshell 'npm run sync' 'npm run css:watch'",
+    "css:watch": "watch 'npm run css' ./_src/scss/",
+    "css": "node-sass ./_src/scss/styles.scss | postcss --use autoprefixer > ./assets/css/styles.css",
+    "postcss": "cssmin ./assets/css/styles.css > ./assets/css/styles.min.css",
+    "sync": "browser-sync start --server --files ./*html ./assets/js/ ./assets/imgs/ ./assets/css/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,17 @@
   "bugs": {
     "url": "https://github.com/stewartknapman/hemanelson/issues"
   },
-  "homepage": "https://github.com/stewartknapman/hemanelson#readme"
+  "homepage": "https://github.com/stewartknapman/hemanelson#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "browser-sync": "^2.18.8",
+    "cssmin": "^0.4.3",
+    "node-sass": "^4.5.0",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^3.0.0-beta",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "inside-scss": "^1.0.0"
+  }
 }
