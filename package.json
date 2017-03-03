@@ -1,0 +1,19 @@
+{
+  "name": "hema_nelson",
+  "version": "1.0.0",
+  "description": "Official website for HEMA Nelson: http://www.hemanelson.com",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stewartknapman/hemanelson.git"
+  },
+  "author": "@stewartknapman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stewartknapman/hemanelson/issues"
+  },
+  "homepage": "https://github.com/stewartknapman/hemanelson#readme"
+}
