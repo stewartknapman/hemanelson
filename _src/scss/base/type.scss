@@ -6,6 +6,13 @@ body {
   }
 }
 
+a {
+  text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff,
+    0 0.05em 0 #fff, 0 -0.05em 0 #fff,
+    0.1em 0 0 #fff, -0.1em 0 0 #fff,
+    0 0.1em 0 #fff, 0 -0.1em 0 #fff;
+}
+
 abbr {
   border-bottom: dotted 1px currentColor;
 }
