@@ -1,18 +1,12 @@
 .video {
   @include embed;
-  // @include embed-16x9;
+  @include content-breakout;
 
   // Intristic ratio that scales due to vw in breakout
   padding-bottom: 56.25vw;
   @media (min-width: 58em) {
     padding-bottom: 72.5%;
   }
-
-  // Breakout of container
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  max-width: 45em;
 
   iframe {
     @include embed-item;

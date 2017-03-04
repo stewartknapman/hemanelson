@@ -1,0 +1,6 @@
+@mixin content-breakout {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 45em;
+}
