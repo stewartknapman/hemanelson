@@ -1,0 +1,6 @@
+---
+title: HEMA Nelson
+timezone: Pacific/Auckland
+exclude:
+- node_modules
+- package.json
