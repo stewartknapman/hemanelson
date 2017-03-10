@@ -4,11 +4,12 @@
   "description": "Official website for HEMA Nelson: http://www.hemanelson.com",
   "main": "index.html",
   "scripts": {
-    "build": "parallelshell 'npm run sync' 'npm run css:watch'",
+    "build": "parallelshell 'npm run sync' 'npm run jekyll:watch' 'npm run css:watch'",
     "css:watch": "watch 'npm run css' ./_src/scss/",
     "css": "node-sass ./_src/scss/styles.scss | postcss --use autoprefixer > ./assets/css/styles.css",
     "postcss": "cssmin ./assets/css/styles.css > ./assets/css/styles.min.css",
-    "sync": "browser-sync start --server --files ./*html ./assets/js/ ./assets/imgs/ ./assets/css/"
+    "jekyll:watch": "jekyll build --watch",
+    "sync": "browser-sync start --server '_site' --files './_site'"
   },
   "repository": {
     "type": "git",
