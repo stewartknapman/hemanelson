@@ -1,6 +1,12 @@
 ---
 title: HEMA Nelson
 timezone: Pacific/Auckland
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: 'default'
+    title: 'HEMA Nelson&mdash;practitioners of Historical European Martial Arts in Nelson, New Zealand'
 exclude:
 - node_modules
 - package.json
