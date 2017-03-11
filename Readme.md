@@ -96,6 +96,8 @@ This is covered by the [building locally section](#building-locally) of this gui
 
 Building locally allows you to update the Jekyll templates (HTML & Liquid), CSS, and Javascript. Or just to preview the site before pushing any changes to GitHub to be served.
 
+**If all you want to do is work with the content and don't care about the HTML, CSS, etc. then there is no need to read any further.**
+
 #### Set up
 
 You will first need to install [NodeJS](https://nodejs.org/en/) and [Ruby](https://www.ruby-lang.org/en/) to be able to run the build tools for the site. You should refer to these sites installation guides.
