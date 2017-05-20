@@ -1,3 +1,8 @@
+#site-header {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
 #site-main {
   @include container;
   @include reading-length;
