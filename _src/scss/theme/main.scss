@@ -6,7 +6,9 @@ body {
 }
 
 #site-main {
-  @media (min-width: 20em) {
+  padding: 0 0.5rem;
+
+  @media (min-width: 25em) {
     padding: 1rem 1.5rem;
   }
 
