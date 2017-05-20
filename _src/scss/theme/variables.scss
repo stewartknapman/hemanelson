@@ -9,5 +9,13 @@ $font_family_serif: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text
 // $font_family_body:      $font_family_serif;
 // $font_family_headings:  $font_family_serif;
 
-$highlight_color: #1382c5;
+
+$brand_blue_dark: #004b72;
+$brand_blue_mid: #1382c5;
+$brand_blue_light: #40a4db;
+
+$highlight_color: $brand_blue_mid;
 $muted_text_color: #666;
+
+$footer_text_color: #fff;
+$footer_background_color: $brand_blue_dark;

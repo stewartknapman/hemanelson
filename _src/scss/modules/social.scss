@@ -1,0 +1,11 @@
+.social-link-list {
+  @include list-unstyled;
+  @include list-inline;
+
+  a {
+    padding: 0.5em;
+    // No underline
+    text-shadow: none;
+    background-image: none;
+  }
+}

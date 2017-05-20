@@ -6,3 +6,7 @@
     right: auto;
   }
 }
+
+.sr-only {
+  @include visually-hidden;
+}
